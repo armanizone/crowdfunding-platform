@@ -1,0 +1,51 @@
+
+.reward-modall-check {
+  word-wrap: break-word;
+  .modall-check-inner {
+    width: 100%;
+    .check-item-container {
+      margin: 0px 0px 15px;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .check-item {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        .check-description {
+          opacity: .5;
+          margin-bottom: 5px;
+        }
+        .check-body {
+          word-wrap: break-word;
+        }
+        .right {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      &:last-child {
+        margin: 0px;
+      }
+    }
+    .check-hr {
+      position: relative;
+      margin: 35px 0px;
+      .check-hr-title {
+        padding: 0px 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  .reward-modall-check {
+    width: 100%;
+  }
+}

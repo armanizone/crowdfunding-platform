@@ -1,0 +1,45 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.13.13",
+        "axios": "^0.21.1",
+        "laravel-mix": "^6.0.39",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.32.11",
+        "sass-loader": "^11.0.1"
+    },
+    "dependencies": {
+        "@mantine/core": "^4.1.0",
+        "@mantine/dates": "^4.1.0",
+        "@mantine/hooks": "^4.1.0",
+        "@mantine/modals": "^4.1.0",
+        "@mantine/notifications": "^4.1.0",
+        "@mantine/prism": "^4.1.0",
+        "@tinymce/tinymce-react": "^3.12.6",
+        "animate.css": "^4.1.1",
+        "autoprefixer": "^10.4.4",
+        "classnames": "^2.3.1",
+        "date-fns": "^2.28.0",
+        "dayjs": "^1.11.0",
+        "js-cookie": "^3.0.1",
+        "react-icons": "^4.2.0",
+        "react-player": "^2.9.0",
+        "react-query": "^3.34.16",
+        "react-router-dom": "^5.2.0",
+        "tailwindcss": "^3.0.23",
+        "yup": "^0.32.11"
+    }
+}

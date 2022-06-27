@@ -1,0 +1,42 @@
+@import '../admin.scss';
+
+.notification-inner {
+  .user-notifications {
+    font-size: $normal;
+    display: flex;
+    flex-flow: column;
+    .notification {
+      padding: 15px;
+      margin: 15px 0px;
+      display: flex;
+      .notification_title {
+        margin-bottom: 10px;
+        p {
+          font-size: 16px;
+          font-family: $Font;
+        }
+        span {
+          opacity: .5;
+          font-size: 13px;
+        }
+      }
+      .notification_body {
+        opacity: .6;
+      }
+      &:hover {
+        i {
+          color: $red;
+        }
+       }
+      i {
+        color: $blue;
+        padding: 5px 10px 0px 0px;
+        display: block;
+      }
+      p {
+        margin: 0px;
+        font-weight: $fw;
+      }
+    }
+  }
+}

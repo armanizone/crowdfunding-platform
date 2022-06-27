@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  .red {
+    @apply text-white cursor-pointer bg-red-500 disabled:bg-gray-300 disabled:text-white hover:bg-red-700 transition-colors duration-100
+  }
+  .blue {
+    @apply text-white cursor-pointer bg-blue-400 disabled:bg-gray-300 disabled:text-white hover:bg-blue-600 transition-colors duration-100
+  }
+  .b-gradient {
+    @apply text-white cursor-pointer bg-gradient-to-r from-blue-400 to-blue-600 disabled:bg-gray-300 disabled:text-white hover:bg-blue-800 transition-colors duration-100
+  }
+  .r-gradient {
+    @apply text-white cursor-pointer bg-gradient-to-r from-red-400 to-red-600 disabled:bg-gray-300 disabled:text-white hover:bg-red-800 transition-colors duration-100
+  }
+  .y-gradient {
+    @apply text-white cursor-pointer bg-gradient-to-r from-yellow-400 to-yellow-600 disabled:bg-gray-300 disabled:text-white hover:bg-yellow-800 transition-colors duration-100
+  }
+  .g-gradient {
+    @apply text-white cursor-pointer bg-gradient-to-r from-green-400 to-green-600 disabled:bg-gray-300 disabled:text-white hover:bg-green-800 transition-colors duration-100
+  }
+  .gray {
+    @apply text-white cursor-pointer bg-gray-300 disabled:bg-gray-300 disabled:text-white hover:bg-slate-400 transition-colors duration-100
+  }
+  .yellow {
+    @apply text-white cursor-pointer bg-yellow-400 disabled:bg-gray-300 disabled:text-white hover:bg-yellow-600 transition-colors duration-100
+  }
+  .green {
+    @apply text-white cursor-pointer bg-green-400 disabled:bg-gray-300 disabled:text-white hover:bg-green-600 transition-colors duration-100
+  }
+  .link {
+    @apply border-b border-b-blue-400 text-blue-400 cursor-pointer hover:border-b-2
+  }
+  .badge {
+    @apply absolute -right-2 -top-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none bg-gray-300 rounded-full
+  }
+  .bg-border {
+    @apply p-3 sm:p-6 border bg-white rounded-xl
+  }
+}   
+
+body {
+  @apply bg-slate-50
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); 
+  grid-auto-rows: minmax(auto, auto);
+  grid-auto-columns: minmax(auto, 330px);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #E71A3F;
+  border-radius: 5px;
+}
+
+.fade {
+  animation: .2s fadeInDown ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+ }
+ 100% {
+    opacity: 1;
+    transform: translateY(0);
+ }
+}

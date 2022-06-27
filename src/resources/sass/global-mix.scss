@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap');
+
+$font: 'Rubik', sans-serif;
+$Font: 'Montserrat', sans-serif;
+
+*,*:before,*:after{
+  padding: 0px;
+  margin: 0px;
+	box-sizing: border-box;
+  font-family: $font;
+}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a {color: black;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+ul{margin: 0; padding: 0;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-weight: 400; font-family: $Font;}
+
+
+$box-shadow:  0px 0px 1px black;
+// Colors
+$blue: #20C4F4;
+$red: #E71A3F;
+$gray: #c8c8c8;
+$wan: #6a6a6a;
+$green: #05f140;
+$yellow: #edf060;
+
+
+$width: 1140px;
+$fw: 500;
+
+
+$tiny: 13px;
+$normal: 14px;
+$title: 16px;
+$imp: 18px;
+$big: 25px;
+
+
+.tiny {
+  font-size: $tiny;
+}
+.normal {
+  font-size: $normal;
+}
+.title-size {
+  font-size: $title;
+}
+.big {
+  font-size: $big;
+}
+ 
+
+
